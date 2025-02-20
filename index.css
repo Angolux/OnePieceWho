@@ -11,6 +11,7 @@ header {
     display: flex;
     align-items:  center;
     width: 100%;
+    z-index: 999;
 }
 header ul {
     list-style: none;
@@ -20,6 +21,7 @@ header ul {
     align-items: center;
     justify-content: space-evenly;
 }
+
 li {
     position: relative;
 }
@@ -59,6 +61,18 @@ header img{
     width: 120px;
 }
 
+#banniere{
+    display: flex;
+    padding-top: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: wheat;
+    border-bottom: solid black 1px;
+   
+}
+
 main{
     display: flex;
     background-image: url(./Img/pexels-matthardy-1533720.jpg); /* Remplacez par le chemin de votre image */
@@ -66,13 +80,21 @@ main{
     background-position: center; /* Centre l'image */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
     background-attachment: fixed;
-    padding-bottom: 50rem;
+    padding-bottom: 10rem;
     padding-top: 80px;
     width: 100%;
     margin: 0;
-    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
+    flex-direction: column;
   
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
 }
 
 .case{
@@ -85,6 +107,7 @@ main{
     background-color: wheat;
     flex-direction: column;
     align-items: center;
+    transition: transform ease-in-out 0.3s;
     
 }
 
@@ -94,6 +117,9 @@ main{
     height: 15rem;
 }
 
+.case:hover{
+    transform: scale(1.1);
+}
 
 footer {
     display: flex;
