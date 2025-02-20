@@ -200,9 +200,18 @@ footer ul {
     header{
         flex-direction: column;
     }
+
+    #banniere{
+        width: 130%;
+    }
+    
+    main{
+        width: 160%;
+    }
+
     footer{
         flex-direction: column;
-        width: 100%;
+        width: 160%;
     }
 
     .separateur{
